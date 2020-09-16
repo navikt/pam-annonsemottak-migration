@@ -13,6 +13,8 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQL95Dialect
     properties:
       hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
         generate_statistics: true
         cache:
           use_second_level_cache: true
@@ -27,3 +29,4 @@ spring:
     enabled: false
 migrate:
   url: ${MIGRATION_URL:http://localhost:9016}
+
