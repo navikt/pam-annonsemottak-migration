@@ -29,7 +29,7 @@ public class Application implements CommandLineRunner {
         LocalDateTime dateTime = null;
         if (args.length>0 && "migrate".equals(args[0])) {
             if (args.length>1 && "date".equals(args[1])) {
-                dateTime = LocalDateTime.parse(args[2], DateTimeFormatter.ISO_DATE);
+                dateTime = LocalDateTime.parse(args[2], DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss"));
             }
             LOG.info("starting migration from date {} ",dateTime);
             migrationService.migrateStilling(dateTime);
