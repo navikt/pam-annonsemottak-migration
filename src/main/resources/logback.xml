@@ -9,7 +9,6 @@
             <pattern>%date [%-5level] [%thread] %logger{5} - %m%n</pattern>
         </encoder>
     </appender>
-
     <logger name="org.hibernate.engine.internal.StatisticalLoggingSessionEventListener" level="OFF" />
 
     <root level="info">

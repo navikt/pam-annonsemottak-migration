@@ -24,9 +24,9 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: create
+      ddl-auto: none
   flyway:
     enabled: false
 migrate:
-  url: ${MIGRATION_URL:http://localhost:9016}
+  url: ${MIGRATION_URL:https://localhost}
 

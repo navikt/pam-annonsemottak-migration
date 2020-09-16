@@ -89,7 +89,7 @@ public class Stilling extends ModelEntity {
     public Stilling(Long id, String title, String place, @NotNull String employer, String employerDescription,
                     String jobDescription, String dueDate, @NotNull String kilde, @NotNull String medium,
                     String url, String externalId, LocalDateTime expires, Map<String, String> properties, LocalDateTime systemModifiedDate,
-                    String uuid) {
+                    String uuid, String hash) {
         this.setId(id);
         this.title = title;
         this.place = place;
@@ -105,6 +105,7 @@ public class Stilling extends ModelEntity {
         this.properties = properties;
         this.systemModifiedDate = systemModifiedDate;
         this.uuid = uuid;
+        this.hash = hash;
     }
 
     void calculateHash() {

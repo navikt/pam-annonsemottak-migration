@@ -28,7 +28,8 @@ public class StillingFeedItemMapper {
                 item.expires,
                 item.properties,
                 item.systemModifiedDate,
-                item.uuid
+                item.uuid,
+                item.hash
         );
         stilling.setCreated(item.created);
         stilling.setCreatedBy(item.createdBy);
