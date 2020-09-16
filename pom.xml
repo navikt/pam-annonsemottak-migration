@@ -21,7 +21,6 @@
         <httpclient.version>4.5.3</httpclient.version>
         <wiremock.version>2.23.2</wiremock.version>
         <assertj.version>3.7.0</assertj.version>
-        <shedlock.version>2.2.0</shedlock.version>
         <logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
         <okhttp.version>3.6.0</okhttp.version>
         <java.version>12</java.version>
@@ -144,16 +143,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>net.javacrumbs.shedlock</groupId>
-            <artifactId>shedlock-spring</artifactId>
-            <version>${shedlock.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>net.javacrumbs.shedlock</groupId>
-            <artifactId>shedlock-provider-jdbc-template</artifactId>
-            <version>${shedlock.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
