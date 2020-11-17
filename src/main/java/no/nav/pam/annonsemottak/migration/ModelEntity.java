@@ -38,8 +38,9 @@ public class ModelEntity {
             setCreatedBy(userName);
             setCreatedByDisplayName(userDisplayName);
         }
-
-        setUpdated(now);
+        if (updated==null) {
+            setUpdated(now);
+        }
         setUpdatedBy(userName);
         setUpdatedByDisplayName(userDisplayName);
     }
